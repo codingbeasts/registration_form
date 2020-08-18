@@ -1,0 +1,103 @@
+/* global css */
+
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Domine', serif;
+}
+
+body{
+    background:rgb(193, 189, 186);
+}
+.wrapper{
+    position: relative;
+}
+.box{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(12, 62, 70, 0.79);
+    margin: 0 auto;
+    left: 50%;
+    padding: 60px 35px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: whitesmoke;
+    transform: translate(-50%,30%);
+    overflow: hidden;
+}
+.active{
+    background: rgb(253, 89, 60) !important;
+}
+.btn-box{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    
+}
+.btn-box .btn{
+    padding: 15px;
+    width: 50%;
+    
+}
+
+.btn:hover{
+    background-color: rgba(253, 89, 60,0.82);
+}
+.form-box{
+    position: relative;
+}
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    position: absolute;
+    width: 100%;
+}
+.form-box-1{
+    /* display: none; */
+    left: 150%;
+}
+
+form label{
+    margin: 30px 0;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+form input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+    background:transparent;
+    padding: 10px 5px;
+    color:white;
+    font-size: 1.5rem;
+    
+}
+.btn{
+    background-color:rgba(160, 179, 176, 0.25);
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 2rem;
+    cursor: pointer;
+    transition:0.5s ease
+}
+
+.form-btn{
+    margin-top: 30px;
+}
+.btn:focus{
+    background:rgba(253, 89, 60,0.32);
+}
