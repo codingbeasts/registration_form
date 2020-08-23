@@ -16,14 +16,14 @@
 
             <div class="form-box">
             <form class="form-box-1" action="./assets/php/login.php" method="post">
-                <label for="uName">user name : </label>
-                <input type="text" id="uName" name="username" placeholder="Enter User Name Here" required>
+                <label for="loginName">user name : </label>
+                <input type="text" id="loginName" name="username" placeholder="Enter User Name Here" required>
 
-                <label for="passId">password : </label>
-                <input type="password" id="passId" name="password" placeholder="Enter Password Here" required>
+                <label for="login_passId">password : </label>
+                <input type="password" id="login_passId" name="password" placeholder="Enter Password Here" required>
 
                 <input class="btn form-btn" type="submit" value="submit">
-                
+
             </form>
             <form class="form-box-2" action="./assets/php/signup.php" method="post">
                 <label for="uName">user name : </label>
@@ -36,7 +36,7 @@
                 <input type="password" id="passId" name="password" placeholder="Enter Password Here" required>
 
                 <input class="btn form-btn" type="submit" value="signup">
-                
+
             </form>
             </div>
         </div>
